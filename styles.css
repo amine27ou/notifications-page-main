@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.notification-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#notifications{
+    background: hsl(224, 51%, 32%);
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+}
+.title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.notification{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px ;
+}
+.notification img{
+    width: 50px;
+}
+.notification-box{
+    padding: 10px;
+}
+.notification p{
+    color: hsl(219, 14%, 63%);
+}
+.notification strong{
+    cursor: pointer;
+    color: black;
+    transition: all .4s;
+}.notification strong:hover{
+    color: hsl(224, 51%, 32%);
+}
+
+.notification:nth-child(4){
+    align-items: start;
+}
+.message{
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 5px;
+    border-radius: 3px;
+    transition: all .4s;
+    margin: 10px 0;
+}
+.message:hover{
+    background-color: #c9eaf5;
+    border: 1px solid #c9eaf5;
+}
+.notification.unread{
+    border-radius: 4px;
+    background-color: #e9faff;
+    padding: 10px ;
+}
+.notification.unread .notification-dot{
+    display: inline-flex;
+    transform:translate(5px,-60% );
+    background: orangered;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+small{
+    color: hsl(219, 14%, 63%);
+}
+#markRead{
+    color: hsl(224, 51%, 32%);
+}
